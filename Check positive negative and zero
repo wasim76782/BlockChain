@@ -1,0 +1,15 @@
+pragma solidity ^0.8.20;
+
+contract CheckNumber {
+
+    function check(int n) public pure returns (string memory) {
+
+        if (n > 0) {
+            return "Positive";
+        } else if (n < 0) {
+            return "Negative";
+        } else {
+            return "Zero";
+        }
+    }
+}
