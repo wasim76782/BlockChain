@@ -1,0 +1,13 @@
+pragma solidity ^0.8.20;
+
+contract SimpleInterest {
+
+    function calculate(
+        uint principal,
+        uint rate,
+        uint time
+    ) public pure returns (uint) {
+
+        return (principal * rate * time) / 100;
+    }
+}
