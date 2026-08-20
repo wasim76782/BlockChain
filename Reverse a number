@@ -1,0 +1,17 @@
+pragma solidity ^0.8.20;
+
+contract ReverseNumber {
+
+    function reverse(uint n) public pure returns (uint) {
+
+        uint rev = 0;
+
+        while (n > 0) {
+            uint digit = n % 10;
+            rev = rev * 10 + digit;
+            n = n / 10;
+        }
+
+        return rev;
+    }
+}
