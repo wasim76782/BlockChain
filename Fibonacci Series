@@ -1,0 +1,23 @@
+pragma solidity ^0.8.20;
+
+contract Fibonacci {
+
+    function fib(uint n) public pure returns (uint[] memory) {
+
+        uint[] memory arr = new uint[](n);
+
+        if (n > 0) {
+            arr[0] = 0;
+        }
+
+        if (n > 1) {
+            arr[1] = 1;
+        }
+
+        for (uint i = 2; i < n; i++) {
+            arr[i] = arr[i - 1] + arr[i - 2];
+        }
+
+        return arr;
+    }
+}
