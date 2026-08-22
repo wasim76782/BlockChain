@@ -1,0 +1,13 @@
+
+pragma solidity ^0.8.20;
+
+contract Temperature {
+
+    function celsiusToFahrenheit(int celsius)
+        public
+        pure
+        returns (int)
+    {
+        return (celsius * 9 / 5) + 32;
+    }
+}
